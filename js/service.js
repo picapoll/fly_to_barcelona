@@ -1,13 +1,15 @@
 angular.module('mainApp')
     .factory('skyscannerService', function($http) {
-        function _getRepos(username) {
-        	var apiKey = "sk858097278294566056945278099666"
-            var url =  + apiKey 
-            return $http.get(url)
+        function getCityOrigin(username) {
+        	// var apiKey = "sk858097278294566056945278099666"
+            var urlcountry =  'http://partners.api.skyscanner.net/apiservices/geo/v1.0?apikey=sk858097278294566056945278099666'
+            return $http.get(urlcountry)
+
         }
 
         return {
-            getDates: _getRepos,
-            getInfoProfile: _getInfoProfile
+            getCityOrigin: getCityOrigin,
+            
         }
     })
+

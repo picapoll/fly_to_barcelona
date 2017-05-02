@@ -37,9 +37,9 @@ body {
 
 body {
     color: #fff;
-    /*background-image: url('../img/fondo.jpg'); IMG BACKGROUND*/
-    background-image: url('../img/sunset-plane.png'); /*IMG BACKGROUND*/
-    background-size: cover;
+    background-image: url('../img/fondo.jpg'); IMG BACKGROUND
+/*    background-image: url('../img/sunset-plane.png'); /*IMG BACKGROUND*/
+*/    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
@@ -72,7 +72,7 @@ body {
 /* Padding for spacing and border */
 
 .inner {
-	border-radius: 10px;
+	border-radius: 0px;
     padding: 5px;
 }
 
