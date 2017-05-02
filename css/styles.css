@@ -1,0 +1,41 @@
+.beauty-input {
+    color: black;
+    border-radius: 5px;
+    border: 0 height: 50px;
+    margin: 10px;
+    width: 40%;
+}
+
+.price {
+    height: 40px;
+    font-size: 20px;
+}
+
+.bg-opacity {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.lets {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lead {
+    margin-bottom: 0px;
+}
+
+.min-size-date{
+    font-size: 10px;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 480px) {
+    input {
+        width: 100%;
+    }
+    .row {
+        margin: 0;
+    }
+}

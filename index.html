@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fly to BCN ✈️</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cover.css">
+</head>
+
+<body>
+    Angular works? {{ 4 + 4 }} 💪
+    <!-- starting layout -->
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <!-- start nav -->
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Fly to Barcelona</h3>
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#/">GoBCN</a></li>
+                                <li><a href="#/">Dates</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- end nav -->
+                <!-- start div content -->
+                
+                <!-- <ng-view></ng-view> -->
+
+                <div class="inner cover bg-opacity">
+                    <!-- opacity class created -->
+                    <h1 class="cover-heading">Where you come from?</h1>
+                    <p class="lead">Tell us your budget</p>
+                    <input type="text" class="beauty-input price" placeholder="Enter price">
+                    <p class="lead">Where you from?</p>
+                    <input type="text" class="beauty-input price" placeholder="Enter city">
+                    <p class="lead">
+                        <a href="#" class="btn btn-lg btn-default lets">Lets go to BCN!</a>
+                        <a href="#" class="min-size-date">or choose your date</a>
+                    </p>
+                </div>
+
+                <!-- end div content -->
+
+                <footer class="mastfoot">
+                    <div class="inner">
+                        <p>Team Project <a href="http://getbootstrap.com">Bernat, Wally y Carles<a>
+	                </div>
+	            </footer>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- scirpts angular / js -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+    <script type="text/javascript" src="js/service.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
