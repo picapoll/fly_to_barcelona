@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" ng-app="mainApp">
 
 <head>
@@ -6,6 +6,12 @@
     <title>Fly to BCN ✈️</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="js/places.json">
+    <!--  start Amadeus Autocomplete -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- !-- end Amadeus Autocomplete -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cover.css">
 </head>
@@ -25,25 +31,36 @@
                                 <li class="active"><a href="#">Home</a></li>
                                 <li><a href="#">Resultprice</a></li>
                                 <!--<li><a href="#">Contact</a></li> -->
-                            </ul>
                         </nav>
                     </div>
                 </div>
                 <!-- end nav -->
+
                 <!-- start div content -->
-                <div class="row">
+                <div class="row" ng-controller="autoCompleteCTRL">
+                    <p>Angular works? {{ 4 + 4 }} 💪</p>
                     <div class="inner cover bg-opacity col-md-12">
                         <div class="col-md-8 col-md-offset-2 ">
                             <!-- opacity class created -->
                             <h2 class="cover-heading">Bcn is waiting for you!</h2>
                             <!--<p class="lead">Tell us your budget</p>-->
-                            <input type="number" class="beauty-input price" placeholder="Your budget?">
+                            <input type="number" class="beauty-input price" placeholder="Your budget?" value="{{maxPrice.id}}">
+                            <p>Angular works? {{ 4 + 4 }} 💪</p>
                             <!-- <p class="lead">Where you from?</p> -->
-                            <input type="text" class="beauty-input from" placeholder="Where are you?" required>
-                       <!--      <div id="ip-response">
+                            <div class="list-wrapper">
+                                <div>
+                                    <input id="city" type="text" class="beauty-input from input" placeholder="Where are you?" ng-keydown="checkKeyDown($event)" ng-keyup="checkKeyUp($event)" ng-model="searchText" ng-change="search()" required>
+                                </div>
+                                <ul class="suggestions-list">
+                                    <li ng-repeat="suggestion in suggestions track by $index" ng-class="{active : selectedIndex === $index}" ng-click="AssignValueAndHide($index)">{{suggestion}}</li>
+                                </ul>
+                            </div>
+                            <!-- <div id="ip-response">
                                 <p></p>
                             </div> -->
-                            
+                            <div ng-controller="GetCountry">
+                                Your country: {{country}}
+                            </div>
                             <p class="lead">
                                 <button type="button" class="btn btn-success buttonhome">Lets go to BCN!</button>
                         </div>
@@ -51,6 +68,7 @@
                     </div>
                 </div>
                 <!-- end div content -->
+
                 <footer class="container mastfoot">
                     <div class="inner">
                         <p>Team project developed by Skylab Coders: Bernat, Wally & Carles</p>
@@ -59,9 +77,8 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-    
-    </script>
+
+
     <!-- scirpts angular / js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
@@ -71,6 +88,7 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/config.js"></script>
     <script type="text/javascript" src="js/controller/homecontroller.js"></script>
+    <script src="js/Controller/autoCompleteCTRL.js"></script>
     <script type="text/javascript" src="js/controller.js"></script>
     <script type="text/javascript" src="js/service.js"></script>
 </body>
