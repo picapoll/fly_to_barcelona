@@ -8,31 +8,38 @@ h2 {
     font-weight: 300;
 }
 
-
-.beauty-input{
-	border-radius: 2px;
-	border: 0
-	height: 50px; 
-	margin: 20px;
-	font-size: 30px;
+.beauty-input {
+    border-radius: 2px;
+    border: 0 height: 50px;
+    margin: 20px;
+    font-size: 30px;
     text-align: center;
     color: #606b80
 }
 
-.input{
-	font-size: 30px;
+.input {
+    font-size: 30px;
 }
 
-.bg-opacity{
-	background: rgba(0, 0, 0, 0.5);
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-.lead{
-	margin-bottom: 0;
+.bg-opacity {
+    background: rgba(0, 0, 0, 0.5);
 }
-	p {
-		margin-bottom: 0;
-	}
+
+.lead {
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
 
 .inner {
     border-radius: 3px
@@ -50,20 +57,18 @@ h2 {
     padding-right: 30px;
 }
 
-footer p{
-	color: white;
+footer p {
+    color: white;
     font-size: 16px;
     font-weight: 400;
 }
 
+
 /*resultpricestyle*/
 
-.resultsheader{
+.resultsheader {
     background: #2121a7;
     /* border: 0; */
     border-radius: 0;
     color: white;
 }
-
-
-
