@@ -5,15 +5,15 @@
             <!-- opacity class created -->
             <h2 class="cover-heading">Bcn is waiting for you!</h2>
             <!--<p class="lead">Tell us your budget</p>-->
-            <input type="number" class="beauty-input price" placeholder="Your budget?" value="">
+            <input type="number" ng-model="budget" class="beauty-input price" placeholder="Your budget?" value="">
             <p>Angular? {{ 4 + 4 }} 💪</p>
             <!-- <p class="lead">Where you from?</p> -->
             <div class="list-wrapper">
                  <div>
-                    <input id="city" type="text" class="beauty-input from input" placeholder="Where are you?" required>
+                    <input id="city" type="text" ng-model="city" class="beauty-input from input" placeholder="Where are you?" required>
                 </div>
             </div>
-            <button type="submit" class="btn btn-success buttonhome" ng-click="search($event)">Lets go to BCN!</button>
+            <button type="submit" class="btn btn-success buttonhome" ng-click="getflights(city, departureDate, budget)">Lets go to BCN!</button>
         </div>
         </p>
     </div>

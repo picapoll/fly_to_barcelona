@@ -7,7 +7,7 @@ angular.module('mainApp')
                 templateUrl: '/templates/home.html',
                 controller: 'homeController'
             })
-            .when('/Resultprice', {
+            .when('/Resultprice/:search:item', {
                 templateUrl: '/templates/resultsprice.html',
                 controller: 'searchController'
             })
