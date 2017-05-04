@@ -13,23 +13,19 @@
     <!-- custom styles -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home.css">
-
-
-<!--     <link rel="stylesheet" href="css/cover.css"> -->
+    <!--     <link rel="stylesheet" href="css/cover.css"> -->
 </head>
 
 <body>
-Angular works? {{ 4 + 4 }} 💪
-
- <div ng-hide="section === 'home'" ng-include src="'/templates/includes/header.html'"></div>
-  <ng-view></ng-view>
-  <div ng-hide="section === 'home'" ng-include src="'/templates/includes/footer.html'"></div>
-
+    Angular works? {{ 4 + 4 }} 💪
+    <div ng-hide="section === 'home'" ng-include src="'/templates/includes/header.html'"></div>
+    <ng-view></ng-view>
+    <div ng-hide="section === 'home'" ng-include src="'/templates/includes/footer.html'"></div>
     <!-- scirpts angular / js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
     <!-- end angular scripts -->
-<!--     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <!--     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/config.js"></script>
     <script type="text/javascript" src="js/service.js"></script>
@@ -37,7 +33,6 @@ Angular works? {{ 4 + 4 }} 💪
     <script type="text/javascript" src="js/controller/resultsController.js"></script>
     <script type="text/javascript" src="js/moment-with-locales.js"></script>
     <script type="text/javascript" src="js/moment.js"></script>
-    
 </body>
 
 </html>
