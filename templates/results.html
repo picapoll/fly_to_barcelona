@@ -1,0 +1,32 @@
+<div class="container resultsbackground">
+    <div class="row">
+        <div>
+        <h2>Search Results for {{ city }}</h2>
+            <div class="col-md-12">
+                <h3>Departure city {{flight.departs_at}} </h3>
+                <table class="table table-list-search">
+                    <thead>
+                        <tr>
+                            <th>Price</th>
+                            <th>Fligth number</th>
+                            <th>Departs at</th>
+                            <th>Arrives at</th>
+                            <th>Buy your ticket</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="flight in listflights">
+                            <td><strong> € {{flight.total_price}}</strong></td>
+                            <td>{{flight.flight_number}}</td>
+                            <td><span class="glyphicon glyphicon-time" aria-hidden="true"></span> <strong> {{flight.departs_at}}</strong> </td>
+                            <td>{{flight.arrives_at}}</td>
+                            <td>
+                                <button type="button" class="btn btn-success" ng-href="{{flight.urlbuylink}}"> Buy your tickets here</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

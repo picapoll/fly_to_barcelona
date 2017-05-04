@@ -20,12 +20,6 @@ angular.module('mainApp')
              .then ( function(results) {
               var simplifiedFlights = results.map( function( results ) {
                 return {
-                  // total_price: flight.fare.total_price,
-                  // flight_number: flight.itineraries[0].outbound.flights[0].flight_number,
-                  // airport_departure: flight.itineraries[0].outbound.flights[0].origin.airport,
-                  // departs_at: flight.itineraries[0].outbound.flights[0].departs_at,
-                  // arrives_at: flight.itineraries[0].outbound.flights[0].arrives_at
-                  // urlbuylink: fligth.payout.deep_link
                   total_price: results.fare.total_price,
                   flight_number: results.outbound.flights[0].flight_number,
                   airport_departure: results.outbound.flights[0].origin.airport,

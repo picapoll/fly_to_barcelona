@@ -1,14 +1,12 @@
 angular.module('mainApp')
     .config(function($routeProvider) {
-        
         $routeProvider
-
             .when('/', {
                 templateUrl: '/templates/home.html',
-                controller: 'homeController'
+                controller: 'HomeController'
             })
-            .when('/Resultprice/:search:item', {
-                templateUrl: '/templates/resultsprice.html',
-                controller: 'searchController'
+            .when('/:search/:city', {
+                templateUrl: '/templates/results.html',
+                controller: 'ResultsController'
             })
     })

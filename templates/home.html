@@ -1,20 +1,19 @@
-<div class="row">
-    <p>Angular works? {{ 4 + 4 }} 💪</p>
-    <div class="inner cover bg-opacity col-md-12">
-        <div class="col-md-8 col-md-offset-2 ">
-            <!-- opacity class created -->
-            <h2 class="cover-heading">Bcn is waiting for you!</h2>
-            <!--<p class="lead">Tell us your budget</p>-->
-            <input type="number" ng-model="budget" class="beauty-input price" placeholder="Your budget?" value="">
-            <p>Angular? {{ 4 + 4 }} 💪</p>
-            <!-- <p class="lead">Where you from?</p> -->
-            <div class="list-wrapper">
-                 <div>
-                    <input id="city" type="text" ng-model="city" class="beauty-input from input" placeholder="Where are you?" required>
-                </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="">
+                <p class="form-title">
+                    FLY TO BARCELONA</p>
+                <form class="login">
+           <!--         <input type="number" placeholder="Your budget?" value=""> -->
+                     <input type="text" ng-model="budget"  placeholder="Budget" required>
+                    <input id="city" type="text" ng-model="city"  placeholder="Where are you?" required>
+                   <button type="submit" class="btn btn-success buttonhome" ng-click="getflights(city, departureDate, budget)">Lets fly to BCN!</button>
+                
+                </form>
             </div>
-            <button type="submit" class="btn btn-success buttonhome" ng-click="getflights(city, departureDate, budget)">Lets go to BCN!</button>
         </div>
-        </p>
     </div>
+    <!-- <div class="posted-by"><p>Team project developed by Skylab Coders: Bernat, Wally & Carles</p></div> -->
 </div>
+

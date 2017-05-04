@@ -12,52 +12,30 @@
     <!-- !-- end Amadeus Autocomplete -->
     <!-- custom styles -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/flightTicket.css">
-    <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="css/home.css">
+
+
+<!--     <link rel="stylesheet" href="css/cover.css"> -->
 </head>
 
 <body>
-    Angular works? {{ 4 + 4 }} 💪
-    <!-- starting layout -->
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <!-- start nav -->
-                <div class="masthead clearfix">
-                    <div class="inner">
-                        <h1 class="masthead-brand">Fly to Barcelona</h1>
-                        <nav>
-                            <ul class="nav masthead-nav">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li class="active"><a href="#/Resultprice">results</a></li>
-                                <!-- 
-                                 -->
-                                <!--<li><a href="#">Contact</a></li> -->
-                        </nav>
-                    </div>
-                </div>
-                <!-- end nav -->
-                <!-- start div content -->
-                <ng-view></ng-view>
-                <!-- end div content -->
-                <footer class="container mastfoot">
-                    <div class="inner">
-                        <p>Team project developed by Skylab Coders: Bernat, Wally & Carles</p>
-                    </div>
-                </footer>
-            </div>
-        </div>
-    </div>
+Angular works? {{ 4 + 4 }} 💪
+<div class="container">
+ <div ng-hide="section === 'home'" ng-include src="'/templates/includes/header.html'"></div>
+  <ng-view></ng-view>
+  <div ng-hide="section === 'home'" ng-include src="'/templates/includes/footer.html'"></div>
+</div>
+
     <!-- scirpts angular / js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
     <!-- end angular scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/config.js"></script>
     <script type="text/javascript" src="js/service.js"></script>
     <script type="text/javascript" src="js/controller/homecontroller.js"></script>
-    <script type="text/javascript" src="js/controller/searchController.js"></script>
+    <script type="text/javascript" src="js/controller/resultsController.js"></script>
     <script type="text/javascript" src="js/moment-with-locales.js"></script>
     <script type="text/javascript" src="js/moment.js"></script>
     
