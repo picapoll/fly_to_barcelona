@@ -20,11 +20,10 @@
 
 <body>
 Angular works? {{ 4 + 4 }} 💪
-<div class="container">
+
  <div ng-hide="section === 'home'" ng-include src="'/templates/includes/header.html'"></div>
   <ng-view></ng-view>
   <div ng-hide="section === 'home'" ng-include src="'/templates/includes/footer.html'"></div>
-</div>
 
     <!-- scirpts angular / js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>

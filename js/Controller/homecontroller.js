@@ -18,7 +18,8 @@ angular.module('mainApp')
             amadeusservice.getflightstoBCN($scope.city, $scope.departureDate, $scope.budget)
                 .then(function(response) {
                     console.log("data arrived!")
-                    $scope.listflights = response
+                    $rootScope.listflights = response
+                    console.log($rootScope.listflights)
                 })
 
         }
