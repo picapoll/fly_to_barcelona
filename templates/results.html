@@ -21,8 +21,8 @@
                             <td><span class="glyphicon glyphicon-time" aria-hidden="true"></span> <strong> {{flight.departs_at}}</strong> </td>
                             <td>{{flight.arrives_at}}</td>
                             <td>
-                                <button type="button" class="btn btn-success" ng-href="{{flight.urlbuylink}}">Buy Ticket</button>
-                                <button type="button" class="btn btn-primary">Print ticket</button>
+                                <a type="button" class="btn btn-success" href="{{flight.urlbuylink}}" target="_blank">Buy Ticket</a>
+                                <a type="button" class="btn btn-primary" >Print ticket</a>
                             </td>
                         </tr>
                     </tbody>
