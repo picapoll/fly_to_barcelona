@@ -50,6 +50,24 @@ form
     margin: 0 auto;
 }
 
+form.login input[type="number"]
+{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    outline: 0;
+}
 form.login input[type="text"]
 {
     width: 100%;
@@ -120,3 +138,17 @@ form i{
 color: white;
 font-size: 70px;
 }
+
+.buttonhome{
+    margin-top: 25px;
+    position: relative;
+    left: 30%;
+    color: #fff;
+    background-color: #5cb85c;
+    border: #4cae4c solid .5px;
+    font-size: 22px;
+    padding: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+

@@ -52,22 +52,23 @@ p {
     border-radius: 3px
 }
 
-.btn-success {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
+/*.btn-success {
+
     margin-bottom: 25px;
     margin-top: 30px;
     margin-left: 110px;
-    font-size: 22px;
-    padding: 13px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
+    
+ 
+}*/
 
 .resultsbackground {
     background: white
-    margin-top: 100px;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.resultsbackground h2 {
+    margin-bottom: 50px;
 }
 
 .resultsheader h1 {
@@ -93,6 +94,17 @@ p {
     align-items: center;
 }
 
+th{
+    background: #bababa;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.headerresults{
+    padding: 0
+
+}
 /* Footer */
 
 footer{
