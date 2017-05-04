@@ -3,4 +3,6 @@ angular.module('mainApp')
     $rootScope.section = 'results'
     var itemSearch = $routeParams.city
     $scope.city = itemSearch
+    
+    
   })

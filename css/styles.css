@@ -65,36 +65,36 @@ p {
     padding-right: 30px;
 }
 
-footer{
+footer {
     text-align: center;
     color: black;
     font-size: 16px;
     font-weight: 400;
 }
 
-.resultsbackground{
+.resultsbackground {
     background: white
 }
 
-
-.resultsheader h1{
+.resultsheader h1 {
     background: #2121a7;
-     border: 0; 
+    border: 0;
     border-radius: 0;
     color: white;
 }
 
-.headerhome{
-        color: white;
+.headerhome {
+    color: white;
     text-align: center;
-        font-size: 50px;
+    font-size: 50px;
 }
+
 .cover {
-      background-image: url('../img/fondo.jpg');
-      background-size: cover;
-      width: 100%;
-      height: 100vh;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-    }
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

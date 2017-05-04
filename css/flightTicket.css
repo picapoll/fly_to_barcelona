@@ -340,6 +340,21 @@
     font-size: 17px;
 }
 
+.landingtime {
+    position: absolute;
+    top: 60px;
+    right: 305px;
+    font-family: Arial Narrow, Arial;
+    font-weight: bold;
+    font-size: 14px;
+    color: #999;
+}
+
+.landingtime span {
+    color: #555;
+    font-size: 17px;
+}
+
 .barcode {
     position: absolute;
     left: 8px;
