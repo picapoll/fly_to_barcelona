@@ -2,12 +2,12 @@
     <div class="row">
         <div class="col-md-12">
             <div class="">
-                <p class="form-title">
-                    FLY TO BARCELONA</p>
+                <h1 class="form-title">
+                    FLY TO BARCELONA <i class="fa fa-plane" aria-hidden="true"></i></h1>
                 <form class="login">
                     <!--         <input type="number" placeholder="Your budget?" value=""> -->
-                    <input type="text" ng-model="budget" placeholder="Budget" required>
-                    <input id="city" type="text" ng-model="city" placeholder="Where are you?" required>
+                    <input type="text" ng-model="budget" placeholder="Max Budget €" required > <i class="fa fa-eur" aria-hidden="true"></i>
+                    <input id="city" type="text" ng-model="city" placeholder="Where are you?" required> <i class="fa fa-compass" aria-hidden="true"></i>
                     <button type="submit" class="btn btn-success buttonhome" ng-click="getflights(city, departureDate, budget)">Let's fly!</button>
                 </form>
             </div>

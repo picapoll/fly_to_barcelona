@@ -16,6 +16,19 @@
     left: 0;
     z-index: 99;
 }
+h1.form-title{
+
+font-family: 'Open Sans' , sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 8%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 8%;
+
+}
 
 p.form-title
 {
@@ -101,4 +114,9 @@ form.login a:hover
     background-color: rgba(0, 0, 0, 0.66);
     padding: 10px;
     left: 45%;
+}
+
+form i{
+color: white;
+font-size: 70px;
 }
