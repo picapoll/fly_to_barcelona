@@ -1,0 +1,46 @@
+[{
+                'value': 'PAR',
+                'label': 'Paris [PAR]'
+            }, {
+                'value': 'CDG',
+                'label': 'Paris Charles de Gaulle Airport [CDG]'
+            }, {
+                'value': 'ORY',
+                'label': 'Paris Orly Airport [ORY]'
+            }, {
+                'value': 'BVA',
+                'label': 'Paris - Beauvais–Tillé Airport [BVA]'
+            }, {
+                'value': 'XCR',
+                'label': 'Paris - Châlons Vatry Airport [XCR]'
+            }, {
+                'value': 'LBG',
+                'label': 'Paris–Le Bourget Airport [LBG]'
+            }, {
+                'value': 'LON',
+                'label': 'London [LON]'
+            }, {
+                'value': 'LHR',
+                'label': 'London Heathrow Airport [LHR]'
+            }, {
+                'value': 'LGW',
+                'label': 'London Gatwick Airport [LGW]'
+            }, {
+                'value': 'STN',
+                'label': 'London - Stansted Airport [STN]'
+            }, {
+                'value': 'LTN',
+                'label': 'London - Luton Airport [LTN]'
+            }, {
+                'value': 'LCY',
+                'label': 'London City Airport [LCY]'
+            }, {
+                'value': 'ELS',
+                'label': 'East London Airport [ELS]'
+            }, {
+                'value': 'YXU',
+                'label': 'London International Airport [YXU]'
+            }, {
+                'value': 'SEN',
+                'label': 'London Southend Airport [SEN]'
+            }]

@@ -7,7 +7,25 @@
                 <form class="login">
                     <!--         <input type="number" placeholder="Your budget?" value=""> -->
                     <input type="number" ng-model="budget" placeholder="Max Budget €" required > 
-                    <input id="city" type="text" ng-model="city" placeholder="Where are you?" required> 
+           <!--          <input id="city" type="text" ng-model="city" placeholder="Where are you?" required>  -->
+
+                    <!-- <input 
+                        type="text" 
+                        ng-model="selected" 
+                        uib-typeahead="city as (city.label ) for city in citiesAutocomplete | filter:$viewValue | limitTo:8" 
+                        typeahead="city as (city.label ) for city in citiesAutocomplete | filter:$viewValue| limitTo:8" 
+                        class="form-control" 
+                        typeahead-min-length="3" 
+                        typeahead-wait-ms="200" 
+                        typeahead-on-select="onSelect($item, $model, $label)"
+                    > -->
+                    <input 
+                        type="text" 
+                        ng-model="selected" 
+                        uib-typeahead="city as (city.label ) for city in citiesAutocomplete | filter:$viewValue | limitTo:8" 
+                        uib-typeahead-on-select="onSelect($item, $model, $label)"
+                        class="form-control" 
+                    >
                     <button type="submit" class="btn btn-success buttonhome" ng-click="getflights(city, departureDate, budget)">Let's fly!</button>
                 </form>
             </div>

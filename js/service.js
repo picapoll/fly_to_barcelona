@@ -32,7 +32,25 @@ angular.module('mainApp')
                 })
         }
 
+        // function autocompleteamadeus(city) {
+        //     var urlcity = 'https://api.sandbox.amadeus.com/v1.2/airports/autocomplete?apikey=sFKou9NvWJAiRC7ddjqmX4tXJGAQNYMG&term=' + city
+        //     console.log(urlcity)
+        //     return $http.get(urlcity, config)
+        //      .then(function(response) {
+        //         return response.data.value
+        //     }
+        
+        // function autocomplete () {
+        // return $http.get('/data/dataorigin.json')
+        //         .then(function (response) {
+        //           return response.data
+        //         })
+        // }
+
+
+
         return {
+            // autocomplete: autocomplete,
             getflightstoBCN: getflightstoBCN
         }
     })

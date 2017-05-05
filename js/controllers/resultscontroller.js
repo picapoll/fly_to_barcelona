@@ -6,6 +6,13 @@ angular.module('mainApp')
         var budgetSearch = $routeParams.budget
          $scope.budget = budgetSearch
 
+         $scope.IsHidden = true;
+        $scope.ShowHide = function() {
+            console.log('!!!!!')
+                //If DIV is hidden it will be visible and vice versa.
+            $scope.IsHidden = $scope.IsHidden ? false : true;
+        }
+
         var departureDate = moment().format('YYYY-MM-DD')        
         var dateSearch = $routeParams.departureDate
         $scope.departureDate = departureDate
