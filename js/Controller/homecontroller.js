@@ -1,5 +1,5 @@
 angular.module('mainApp')
-    .controller('homeController', function($scope, $rootScope, $location,amadeusservice) {
+    .controller('homecontroller', function($scope, $rootScope, $location,amadeusservice) {
         $rootScope.section = 'home'
     
         var today = moment().format('YYYY-MM-DD')

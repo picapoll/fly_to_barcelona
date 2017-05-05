@@ -3,10 +3,10 @@ angular.module('mainApp')
         $routeProvider
             .when('/', {
                 templateUrl: 'templates/home.html',
-                controller: 'homeController'
+                controller: 'homecontroller'
             })
             .when('/:search/:city', {
                 templateUrl: 'templates/results.html',
-                controller: 'resultsController'
+                controller: 'resultscontroller'
             })
     })
