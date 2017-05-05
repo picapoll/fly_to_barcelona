@@ -6,9 +6,13 @@ angular.module('mainApp')
         var budgetSearch = $routeParams.budget
          $scope.budget = budgetSearch
 
-        var today = moment().format('YYYY-MM-DD')
-        console.log(today)
-        $scope.departureDate = today
+        var departureDate = moment().format('YYYY-MM-DD')        
+        var dateSearch = $routeParams.departureDate
+        $scope.departureDate = departureDate
+
+        console.log(citySearch)
+        console.log(budgetSearch)
+        console.log(departureDate)
 
         amadeusservice.getflightstoBCN($scope.city, $scope.departureDate, $scope.budget)
             .then(function(response) {
