@@ -58,7 +58,78 @@ angular.module('mainApp')
         }, {
             'value': 'SEN',
             'label': 'London Southend Airport [SEN]'
-        }]
+        },{
+            "value": "TXL",
+            "label": "Berlin Tegel Airport [TXL]"
+        },
+          {
+            "value": "SXF",
+            "label": "Berlin Schönefeld Airport [SXF]"
+        },
+        {
+    "value": "FRA",
+    "label": "Frankfurt am Main - Frankfurt Airport [FRA]"
+  },
+  {
+    "value": "HHN",
+    "label": "Frankfurt am Main - Frankfurt - Hahn Airport [HHN]"
+  },
+  {
+    "value": "NYC",
+    "label": "New York City [NYC]"
+  },
+  {
+    "value": "JFK",
+    "label": "New York City - John F. Kennedy International Airport [JFK]"
+  },
+  {
+    "value": "EWR",
+    "label": "New York City - Newark Liberty International Airport [EWR]"
+  },
+  {
+    "value": "LGA",
+    "label": "New York City - La Guardia Airport [LGA]"
+  },
+    {
+    "value": "LAX",
+    "label": "Los Angeles International Airport [LAX]"
+  },
+  {
+    "value": "MIL",
+    "label": "Milan [MIL]"
+  },
+  {
+    "value": "MXP",
+    "label": "Milano Malpensa Airport [MXP]"
+  },
+  {
+    "value": "BGY",
+    "label": "Milan - Il Caravaggio International Airport [BGY]"
+  },
+  {
+    "value": "LIN",
+    "label": "Milano Linate Airport [LIN]"
+  },
+  {
+    "value": "PMF",
+    "label": "Milan - Parma Airport [PMF]"
+  },
+  {
+    "value": "ROM",
+    "label": "Rome [ROM]"
+  },
+  {
+    "value": "FCO",
+    "label": "Rome - Leonardo da Vinci–Fiumicino Airport [FCO]"
+  },
+  {
+    "value": "CIA",
+    "label": "Rome - Roma Ciampino Airport [CIA]"
+  },
+  {
+    "value": "LIS",
+    "label": "Lisbon Humberto Delgado Airport [LIS]"
+  }]
     
         $scope.getflights = function() {
             var codeDestination = $scope.selected.value
